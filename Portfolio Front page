@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Portfolio</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.bg{
+    background-color: #111111;
+    width: 100%;
+}
+#hero,.portfolio{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0 50px 0;
+    background-color: #111111;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+.pa{
+    position: relative;
+}
+.side-color{
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    background-color: #ff0062;
+    transform: rotate(-15deg);
+    left: -83%;
+    top: -50%;
+}
+.img img{
+    width: 65%;
+    height: 80vh;
+    border-radius: 20px;
+}
+.intro-myself{
+    padding: 100px 0 0 0 ;
+    font-family: poppins, sens serif;
+    z-index: 11;
+    color: #616161;
+}
+.heading-myself h1{
+    font-family: Poppins;
+    font-weight: 600;
+}
+.button{
+    position: relative;
+    display: flex;
+    border: 1px solid #ff0062;
+    border-radius: 50px;
+    width: 210px;
+    height: 60px;
+    padding-left: 17px;
+    animation: step-start;
+    transition: 0.5s ease-in-out;
+    border-right: none;
+}
+.button button{
+    background: transparent;
+    color: #fff;
+    font-size: 25px;
+}
+.button:hover{
+    color: #fff;
+    /* background: transparent; */
+    background-color: #ff0062; /* Change the gradient colors as per your need */
+    background-size: 200% 100%;
+    animation-delay: 0.6s ease-in-out;
+
+}
+.pera-myself{
+    font-size: 18px;
+}
+.button button:hover{
+}
+.icon{
+    border-radius: 50px;
+    background-color: #ff0062;
+    color: #fff;
+    padding: 22px 22px;
+    object-fit: center;
+    margin-left: 11px;
+}
+.heading-myself h1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 29px;
+    height: 4px;
+    width: 40px;
+    border-radius: 10px;
+    color: #ff0062;
+}
+
+/* header menu */
+header{
+    position: fixed;
+    top: 21%;
+    z-index: 111;
+}
+header ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.heading{
+    position: relative;
+    height: 110px;
+    top: 15%;
+}
+.back-heading{
+    position: absolute;
+    bottom: 0;
+    
+    left: 30%;
+}
+.front-heading{
+    position: relative; 
+}
+.back-heading h1{
+    font-size: 130px;
+    opacity: 0.3;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #222;
+}
+.front-heading h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+}
+.heading-1 h3{
+    font-size: 26px;
+    color: #fff;
+}
+.box p{
+    position: relative;
+    padding: 0 0 0 40px;
+}
+.box p:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 30px;
+    height: 1px;
+    background: #777;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="row"  id="portfolio">
+        <div class="col">
+            <section class="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="heading text-center">
+                            <div class="heading-innner">
+                                <div class="back-heading">
+                                    <h1 class="display-4">Resume</h1>
+                                </div>
+                                <div class="front-heading">
+                                    <h1 class="display-4">About <span style="color: #ffb400;">me</span></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                            <div class="heading-1 mt-5">
+                                <h3 style="text-transform: uppercase;">personal infos</h3>
+                            </div>
+                            <div class="info mt-5">
+                                <div class="row" style="color:#fff">
+                                    <div class="col-lg-6">
+                                        <p >First Name: <strong>Shaheer</strong></p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>First Name: <strong>Ahmed</strong></p>
+
+                                    </div>
+                                </div>
+                                <div class="row" style="color:#fff">
+                                    <div class="col-lg-6">
+                                        <p >Age: <strong>19</strong></p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Nationality: <strong>Pakistan</strong></p>
+                                    </div>
+                                </div>
+                                <div class="row" style="color:#fff">
+                                    <div class="col-lg-6">
+                                        <p >Freelance: <strong style="color: rgb(70, 255, 70);">Available</strong></p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Address: <strong>Hyderabad</strong></p>
+
+                                    </div>
+                                </div>
+                                <div class="row" style="color:#fff">
+                                    <div class="col-lg-6">
+                                        <p >Phone: <strong>+923473251505</strong></p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Email: <strong>shaheerahmed242@gmail.com</strong></p>
+
+                                    </div>
+                                </div>
+                                <div class="row" style="color:#fff">
+                                    <div class="col-lg-6">
+                                        <p >Linkedin: <strong>Shaheer Ahmed</strong></p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Languages: <strong>English,Urdu</strong></p>
+
+                                    </div>
+                                </div>
+                                <div class="button mt-3" style="text-align: end;">
+                                    <button type="button" style="padding-left:10px ;">
+                                        About me
+                                    </button>
+                                    <i style="margin: 0 0 0 13px;" class="fa-solid fa-arrow-right icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                            <div class="row mt-5">
+                                <div class="col-lg-5">
+                                    <div class="box" style="border: 1px solid; padding: 10px 10px 10px;">
+                                        <h1 class="display-4" style="color: #ffb400; font-weight: 700;">1+</h1>
+                                        <p style="color: #fff; text-transform: uppercase; font-size: 18px; margin: 0;">Experience<br> in WordPress </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                     <div class="box" style="border: 1px solid; padding: 10px 10px 10px;">
+                                        <h1 class="display-4" style="color: #ffb400; font-weight: 700;">1+</h1>
+                                        <p style="color: #fff; text-transform: uppercase; font-size: 18px; margin: 0;">Experience <br> in HTML,CSS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col-lg-5">
+                                    <div class="box" style="border: 1px solid; padding: 10px 10px 10px;">
+                                        <h1 class="display-4" style="color: #ffb400; font-weight: 700;">1+</h1>
+                                        <p style="color: #fff; text-transform: uppercase; font-size: 18px; margin: 0;">Experience <br> in Javascript</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                     <div class="box" style="border: 1px solid; padding: 10px 10px 10px;">
+                                        <h1 class="display-4" style="color: #ffb400; font-weight: 700;">1+</h1>
+                                        <p style="color: #fff; text-transform: uppercase; font-size: 18px; margin: 0;">Experience <br> in Bootstrap 5</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </section>
+          
+        </div>
+        <div class="col-lg-1">
+            <header id="header">
+                <ul class="icon-menu">
+                     <li>
+                        <i class="fa-solid fa-house icon"></i>
+                     </li>
+                     <li>
+                        <i class="fa-solid fa-user icon"></i>
+                     </li>
+                     <li>
+                        <i class="fa-solid fa-briefcase icon"></i>
+                     </li>
+                     <li>
+                        <i class="fa-solid fa-envelope-open icon"></i>
+                     </li>
+                </ul>
+            </header>
+        </div>
+    </div>
+
+    
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
